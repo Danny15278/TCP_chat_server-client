@@ -36,4 +36,19 @@ void start_server(int port) {
 		perror("accept");
 		return;
 	}
+	
+	while (true) {
+		char buffer[1024] = {0};
+		int valread = read(new_socket, buffer, 1024);
+		if (valread < 0) {
+			perror("read");
+		}
+		
+		std::cout << "Client: " << buffer << std::endl;
+		const char* reply = "Hello from the server!";
+		send(new_socket, reply, strlen(reply), 0);
+		std::cout << "Server: " << reply << std::endl;
+	}
+	close(new_socket);
+	close(server_fd);
 }

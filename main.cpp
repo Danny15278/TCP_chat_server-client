@@ -1,7 +1,7 @@
-#include <iostream>
+#include "server/server.hpp"
 
 
 int main() {
-	std::cout << "Server started!\n";
+	start_server(8000);
 	return 0;
 }
