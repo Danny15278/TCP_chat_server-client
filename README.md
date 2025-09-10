@@ -18,4 +18,4 @@ Instructions:
 `g++ -std=c++17 client/client.cpp main_client.cpp -o chat_client -pthread`
 
 # Run the server and client
-./chat_server ./chat_client
+`./chat_server ./chat_client`
