@@ -12,10 +12,10 @@ Requirements:
 
 Instructions:
 # Build server
-g++ -std=c++17 server/server.cpp main.cpp -o chat_server -pthread
+`g++ -std=c++17 server/server.cpp main.cpp -o chat_server -pthread`
 
 # Build client
-g++ -std=c++17 client/client.cpp main_client.cpp -o chat_client -pthread
+`g++ -std=c++17 client/client.cpp main_client.cpp -o chat_client -pthread`
 
 # Run the server and client
 ./chat_server ./chat_client
