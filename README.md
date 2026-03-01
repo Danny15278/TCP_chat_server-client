@@ -1,6 +1,6 @@
 # Terminal-Based TCP Chat Server and Client 
 
-This is a TCP/IP based project, written in C++. Multiple clients can connect and exchange messages over the network using TCP sockets and the C POSIX API, using socket programming and multithreading.
+This is a TCP/IP based project, written in C/C++. Multiple clients can connect and exchange messages over the network using TCP sockets and the C POSIX API, using socket programming and multithreading.
 The server is written in modern C++, and handles multiple clients using std::thread. 
 Supports basic send/receiving of text messages.
 
